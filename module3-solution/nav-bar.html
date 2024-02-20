@@ -1,1 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Navigation Bar with Dropdown Menu</title>
+<style>
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
 
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        width: 100%;
+        z-index: 1;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+</style>
+</head>
+<body>
+
+<div class="dropdown">
+    <button>Menu</button>
+    <div class="dropdown-content">
+        <a href="#chicken">Chicken</a>
+        <a href="#beef">Beef</a>
+        <a href="#sushi">Sushi</a>
+    </div>
+</div>
+
+<div id="chicken">
+    <h2>Chicken</h2>
+    <p>Details about Chicken...</p>
+</div>
+
+<div id="beef">
+    <h2>Beef</h2>
+    <p>Details about Beef...</p>
+</div>
+
+<div id="sushi">
+    <h2>Sushi</h2>
+    <p>Details about Sushi...</p>
+</div>
+
+</body>
+</html>
