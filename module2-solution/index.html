@@ -1,1 +1,33 @@
-module 2 solution
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Responsive Divs</title>
+<style>
+    .container {
+        display: flex;
+        justify-content: space-around;
+    }
+    .box {
+        flex: 1;
+        padding: 20px;
+        margin: 10px;
+        background-color: lightblue;
+        border: 1px solid blue;
+    }
+    @media (max-width: 768px) {
+        .container {
+            flex-direction: column;
+        }
+    }
+</style>
+</head>
+<body>
+<div class="container">
+    <div class="box">Div 1</div>
+    <div class="box">Div 2</div>
+    <div class="box">Div 3</div>
+</div>
+</body>
+</html>
